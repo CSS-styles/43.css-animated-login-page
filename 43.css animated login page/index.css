@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626FF;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 500px;
+	width: 400px;
+	font-family: sans-serif;
+	color: white;
+	border-radius: 20px;
+	box-shadow: 1px 1px 60px black;
+	cursor: pointer;
+}
+h1{
+	position: absolute;
+	top: 5%;
+	left: 30%;
+	padding: 5px;
+	font-size: 35px;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 40px black;
+	border-bottom: 5px solid dodgerblue;
+}
+.username,.password{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 20px;
+	height: 50px;
+	width: 90%;
+	font-size: 25px;
+	letter-spacing: 2px;
+	overflow: hidden;
+}
+.icons{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
+	height: 50px;
+	width: 90%;
+	top: 20px;
+	font-size: 20px;
+}
+i{
+	display: block;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	transition: 0.5s;
+	border-radius: 50%;
+}
+.submit{
+	display: block;
+	position: relative;
+	outline: none;
+	border: none;
+	top: 80px;
+	padding: 10px 20px;
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+}
+input[type='text'],[type='password']{
+	display: block;
+	outline: none;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 20px;
+}
+.username::after{
+	content: 'Username';
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: absolute;
+	height: 50px;
+	width: 90%;
+	left: 0;
+	background-color: #262626FF;
+	padding: 5px 10px;
+	transition: 1s;
+	border-left: 5px solid dodgerblue;
+}
+.password::after{
+	content: 'Password';
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: absolute;
+	height: 50px;
+	width: 90%;
+	left: 0;
+	background-color: #262626FF;
+	padding: 5px 10px;
+	transition: 1s;
+	border-left: 5px solid dodgerblue;
+}
+div:hover::after{
+	transform: translateX(99%);
+}
+input[type='text']:focus{
+	transition: 0.5s;
+	border-bottom: 5px solid dodgerblue;
+}
+input[type='password']:focus{
+	transition: 0.5s;
+	border-bottom: 5px solid dodgerblue;
+}
+i:hover{
+	transform: translateY(-10px);
+	background-color: dodgerblue;
+	color: white;
+	box-shadow: 1px 1px 40px dodgerblue;
+}
+.submit:hover{
+	background-color: dodgerblue;
+	color: white;
+	box-shadow: 1px 1px 40px dodgerblue;
+}
